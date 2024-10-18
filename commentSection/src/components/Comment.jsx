@@ -39,16 +39,18 @@ const renderComments = (commentList) =>{
     ))
 }
   return (
-    <div>
-        <h1>Do Comment</h1>
+    <div className="m-8">
+        <h1 className="font-bold text-4xl m-2">Do Comment</h1>
         <textarea 
             placeholder="Write your comment here.." 
             value={message} 
             onChange={(e) => {setMessage(e.target.value)}}
+            className="border border-gray-500 p-4"
         >
         </textarea>
         <button 
             onClick={handleSubmit}
+            className="font-bold bg-green-500 text-white p-2 border rounded-lg border-gray-700"
         >
             Submit
         </button>
